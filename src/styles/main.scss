@@ -1,12 +1,31 @@
-// @import "base";
+@import "base";
 // You need the base only when you are not using bootstrap. In that case, go to _base.scss
 // to customize it as you may want.
 
 @import "variables";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Write your sass code here or import partials
 
-h1 {
-  color: tomato;
+ody {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    transition: all 1s;
+}
+
+h1:hover {
+    transform: scale(1.6);
+    color: rgb(255, 255, 255);
+    background: black;
+    }
